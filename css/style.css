@@ -99,7 +99,17 @@ a {
     color: #656565;
 }
 
-.product-name:hover, .product-name:focus {
+.product-name.large {
+    font-size: 1.8rem;
+}
+
+.product-name small {
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+}
+
+a.product-name:hover, a.product-name:focus {
     color: #000;
     text-decoration: none;
 }
@@ -208,5 +218,22 @@ a {
 }
 
 .large-icon, .large-text {
-    color: #c0c0c0;
+    color: #6c6c6c;
+}
+
+.img-large {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-large:hover {
+    background-size: 400%;
+}
+
+.img-small {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }

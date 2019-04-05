@@ -10,4 +10,43 @@ $(function() {
         $(this).children('.dropdown-toggle').attr('aria-expanded', 'false');
     });
 
+    $('.img-small').click(function() {
+        var src = $(this).data('src');
+        $('.img-large').css("background-image", "url('"+src+"')");
+    });
+
+    $('.img-large').mousemove(function() {
+        var relX = event.pageX - $(this).offset().left;
+        var relY = event.pageY - $(this).offset().top;
+        var width = $(this).width();
+        var height = $(this).height();
+        var x = (relX / width) * 100;
+        var y = (relY / height) * 100;
+        $(this).css("background-position", x+"% "+y+"%");
+    });
+
+    $('.img-large').mouseout(function() {
+        $(this).css("background-position", "center");
+    });
+
+    $( window ).resize(function() {
+        setImgLarge();
+        setImgSmall();
+    });
+
+    setImgLarge();
+    setImgSmall();
+
 });
+
+function setImgLarge() {
+    var imgLarge = $('.img-large');
+    var width = imgLarge.width();
+    imgLarge.height(width * 2/3);
+}
+
+function setImgSmall() {
+    var imgSmall = $('.img-small');
+    var width = imgSmall.width();
+    imgSmall.height(width);
+}
