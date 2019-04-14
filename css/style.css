@@ -323,6 +323,39 @@ a.product-name:hover, a.product-name:focus {
     font-weight: bold;
 }
 
+.pagination {
+    font-size: 20px;
+}
+
+.pagination .page-link {
+    background-color: transparent;
+    border: 0;
+    margin-right: 10px;
+    color: #656565;
+}
+
+.pagination .page-link:hover, .pagination .page-link:focus {
+    color: #000;
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: transparent;
+    color: #9fa9ab;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #656565;
+    color: #fff;
+    font-size: 23px;
+    line-height: 1;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 @media (max-width: 767.98px) {
 
     .sidebar {
