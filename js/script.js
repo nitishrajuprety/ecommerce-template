@@ -10,7 +10,7 @@ $(function() {
         $(this).children('.dropdown-toggle').attr('aria-expanded', 'false');
     });
 
-    $('.img-small').click(function() {
+    $('.img-small').on('mouseenter click', function() {
         var src = $(this).data('src');
         $('.img-large').css("background-image", "url('"+src+"')");
     });
