@@ -15,7 +15,9 @@ $(function() {
         $('.img-large').css("background-image", "url('"+src+"')");
     });
 
-    $('.img-large').mousemove(function() {
+    var imgLarge = $('.img-large');
+
+    imgLarge.mousemove(function() {
         var relX = event.pageX - $(this).offset().left;
         var relY = event.pageY - $(this).offset().top;
         var width = $(this).width();
@@ -25,7 +27,7 @@ $(function() {
         $(this).css("background-position", x+"% "+y+"%");
     });
 
-    $('.img-large').mouseout(function() {
+    imgLarge.mouseout(function() {
         $(this).css("background-position", "center");
     });
 
