@@ -54,7 +54,7 @@ a {
     color: #000;
 }
 
-.header-item, .favorite {
+.header-item {
     padding: .25rem .4rem;
     cursor: pointer;
     color: #656565;
@@ -68,8 +68,9 @@ a {
     max-height: 55px;
 }
 
-.header-item-holder:hover .header-item, .header-item-holder:focus  .header-item {
+.header-item-holder .header-item:hover, .header-item-holder  .header-item:focus {
     color: #000;
+    text-decoration: none;
 }
 
 .nav-item {
@@ -354,6 +355,14 @@ a.product-name:hover, a.product-name:focus {
     border-radius: 20px;
     padding-left: 0;
     padding-right: 0;
+}
+
+table td, table th {
+    vertical-align: middle !important;
+}
+
+table td img {
+    max-height: 80px;
 }
 
 @media (max-width: 767.98px) {
