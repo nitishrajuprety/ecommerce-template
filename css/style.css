@@ -46,10 +46,10 @@ a {
 
 .site-logo a {
     color: #404040;
+    text-decoration: none;
 }
 
 .site-logo a:hover, .site-logo a:focus {
-    text-decoration: none;
     color: #000;
 }
 
@@ -60,6 +60,7 @@ a {
     transition: color .2s linear 0s;
     font-weight: bold;
     line-height: 2.5;
+    text-decoration: none;
 }
 
 .header-item img {
@@ -97,6 +98,7 @@ a {
     font-size: 1.2rem;
     font-weight: 600;
     color: #656565;
+    text-decoration: none;
 }
 
 .product-name.large {
@@ -362,6 +364,11 @@ table td, table th {
 
 table td img {
     max-height: 80px;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 @media (max-width: 767.98px) {
