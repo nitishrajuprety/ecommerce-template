@@ -165,19 +165,6 @@ a.product-name:hover, a.product-name:focus {
     color: #fff;
 }
 
-.message-holder {
-    position: fixed;
-    left: 1rem;
-    bottom: 1rem;
-    width: 400px;
-    max-width: calc(100vw - 2rem);
-    z-index: 1080;
-}
-
-.message-holder .alert {
-    box-shadow: #707070 1px 2px 5px;
-}
-
 .product-item {
     position: relative;
     overflow: hidden;

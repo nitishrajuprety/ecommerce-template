@@ -1,5 +1,7 @@
 $(function() {
 
+    $('.toast').toast('show');
+
     $('.nav-item.dropdown').mouseenter(function() {
         $(this).addClass('show');
         $(this).children('.dropdown-menu').addClass('show');
@@ -17,7 +19,7 @@ $(function() {
 
     var imgLarge = $('.img-large');
 
-    imgLarge.mousemove(function() {
+    imgLarge.mousemove(function(event) {
         var relX = event.pageX - $(this).offset().left;
         var relY = event.pageY - $(this).offset().top;
         var width = $(this).width();
