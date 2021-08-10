@@ -247,8 +247,8 @@ a.product-name:hover, a.product-name:focus {
 }
 
 .sidebar {
-    border-left-width: 1px !important;
-    border-top-width: 0 !important;
+    border-left: 1px solid #c7c8c9;
+    border-top: 0 solid #c7c8c9;
 }
 
 .average-rating {
@@ -361,8 +361,8 @@ table td img {
 @media (max-width: 767.98px) {
 
     .sidebar {
-        border-left-width: 0 !important;
-        border-top-width: 1px !important;
+        border-left: 0 solid #c7c8c9;
+        border-top: 1px solid #c7c8c9;
     }
 
 }
